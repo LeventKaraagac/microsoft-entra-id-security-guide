@@ -1,4 +1,5 @@
 # Security Groups vs Microsoft 365 Groups
+**Last edited:** 12/10/2026
 
 When you create a group in Microsoft Entra ID, the first choice is the **group type**. The second is the **membership type**. This page explains both, and what this guide chooses.
 
