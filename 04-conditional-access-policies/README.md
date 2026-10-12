@@ -5,15 +5,25 @@ Conditional Access is Microsoft's [Zero Trust policy engine](https://learn.micro
 
 Set up your groups first ([02](../02-user-group-and-role-structure/)) and your break-glass accounts ([03](../03-break-glass-accounts/)). Every policy below excludes the **SG-BreakGlass** group, so those accounts can always get in if a policy goes wrong.
 
-## The policies in this guide
+## Documentation status
 
-| # | Policy | What it does |
-|---|---|---|
-| 1 | [Block legacy authentication](block-legacy-authentication.md) | Blocks old sign-in protocols that can't do MFA |
-| 2 | [Require phishing-resistant MFA for administrators](phishing-resistant-mfa-for-admins.md) | Admins must use a phishing-resistant method such as a passkey |
-| 3 | [Require MFA for all users](mfa-for-all-users.md) | Everyone must pass MFA |
-| 4 | [Secure security info registration](secure-security-info-registration.md) | Protects the moment users register MFA methods |
-| 5 | [Session controls](session-controls.md) | Forces periodic re-sign-in and ends browser sessions |
+| Policy | Documentation |
+|---|---|
+| Block legacy authentication | [Published](block-legacy-authentication.md) |
+| Require phishing-resistant MFA for administrators | [Published](phishing-resistant-mfa-for-admins.md) |
+| Require MFA for all users | [Published](mfa-for-all-users.md) |
+| Secure security info registration | [Published](secure-security-info-registration.md) |
+| Sign-in frequency and browser persistence | [Published](session-controls.md) |
+| Require MFA for guests | In-progress |
+| Require MFA for risky sign-ins | In-progress |
+| Require remediation for risky users | In-progress |
+| Require authentication strength for device registration | In-progress |
+| Require device compliance | In-progress |
+| Require compliant device, hybrid joined, or MFA | In-progress |
+| Require MFA for Azure management | Planned |
+| Block access for unknown or unsupported devices | In-progress |
+| Require terms of use to be accepted | In-progress |
+| Block access by location | In-progress |
 
 ## Start in report-only mode
 
@@ -28,13 +38,13 @@ When you are comfortable with the results, switch the policy to **On**. You can 
 **Where:** Entra ID > Conditional Access > Overview, then **Create new policy** or **Create new policy from templates**
 
 <br>
-<img src="" alt="Conditional Access Overview page with the Create new policy and Create new policy from templates options"/>
+<img src="https://i.imgur.com/JirKOAD.png" alt="Conditional Access Overview page with the Create new policy and Create new policy from templates options"/>
 <br>
 
 Microsoft also provides ready-made templates. Open **Create new policy from templates** to see them. The pages below build each policy by hand so you understand every setting.
 
 <br>
-<img src="" alt="Conditional Access policy templates page listing the available Microsoft templates grouped by scenario"/>
+<img src="https://i.imgur.com/VU25gvP.png" alt="Conditional Access policy templates page listing the available Microsoft templates grouped by scenario"/>
 <br>
 
 ## Testing a policy with What If
@@ -44,31 +54,6 @@ The **What If** tool tests how your policies would apply to a given sign-in, wit
 **Where:** Entra ID > Conditional Access > Policies > What If
 
 Pick a user, an app and the conditions to test, then select **What If**. The results list the policies that would apply. Use it on every policy.
-
-## Status
-
-Built, and currently in report-only mode:
-
-- [x] Block legacy authentication
-- [x] Require phishing-resistant MFA for administrators
-- [x] Require MFA for all users
-- [x] Secure security info registration
-- [x] Sign-in frequency and browser persistence controls
-
-**Not built yet.** These are planned or blocked:
-
-| Policy | Status |
-|---|---|
-| Require MFA for risky sign-ins | Needs Entra ID P2 (ID Protection) |
-| Require remediation for risky users | Needs Entra ID P2 (ID Protection) |
-| Require device compliance | Needs devices enrolled in Intune first |
-| Require compliant device, hybrid joined, or MFA | Needs Intune first |
-| Require authentication strength for device registration | Planned, alongside device management |
-| Require MFA for guests | Planned |
-| Require MFA for Azure management | Planned |
-| Block access for unknown or unsupported devices | Planned |
-| Require terms of use to be accepted | Planned |
-| Block access by location | Planned |
 
 ## Checklist
 
