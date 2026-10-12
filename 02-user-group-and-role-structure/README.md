@@ -29,19 +29,19 @@ Two rules to follow:
 **Where:** Entra ID > Groups > All groups > New group
 
 <br>
-<img src="" alt="Groups > All groups page in Microsoft Entra ID with the New group button highlighted"/>
+<img src="https://i.imgur.com/Kce8Yxp.png" alt="Groups > All groups page in Microsoft Entra ID with the New group button highlighted"/>
 <br>
 
 Choose **Security** as the group type and **Assigned** as the membership type. Fill in a name and description. You can also add **owners**, who can manage the group even if they hold no admin role. See [Security groups vs Microsoft 365 groups](security-groups-vs-m365-groups.md) for why.
 
 <br>
-<img src="" alt="New group form with Security group type, group name, description and Assigned membership type filled in for SG-Admins"/>
+<img src="https://i.imgur.com/vDiPn7e.png" alt="New group form with Security group type, group name, description and Assigned membership type filled in for SG-Admins"/>
 <br>
 
 Select **Create**. The group now appears in the Groups list.
 
 <br>
-<img src="" alt="All groups list showing the newly created SG-Admins security group"/>
+<img src="https://i.imgur.com/ojNr9GR.png" alt="All groups list showing the newly created SG-Admins security group"/>
 <br>
 
 ### The four groups
@@ -56,15 +56,15 @@ Repeat the same steps for each:
 | **SG-Guests** | External and guest accounts. Used to scope guest-specific policies |
 
 <br>
-<img src="" alt="New group form for SG-BreakGlass with the description Security group for emergency-access accounts excluded from all Conditional Access policies"/>
+<img src="https://i.imgur.com/eltvtTS.png" alt="New group form for SG-BreakGlass with the description Security group for emergency-access accounts excluded from all Conditional Access policies"/>
 <br>
 
 <br>
-<img src="" alt="New group form for SG-AllUsers with the description Security group for standard licensed users"/>
+<img src="https://i.imgur.com/JSiJYab.png" alt="New group form for SG-AllUsers with the description Security group for standard licensed users"/>
 <br>
 
 <br>
-<img src="" alt="New group form for SG-Guests with the description Security group for external and guest accounts"/>
+<img src="https://i.imgur.com/9rr344y.png" alt="New group form for SG-Guests with the description Security group for external and guest accounts"/>
 <br>
 
 ### Do you actually need SG-AllUsers?
@@ -94,13 +94,13 @@ You can also fill department groups automatically. A dynamic user group with a r
 **Where:** Entra ID > Users > All users > New user > Create new user
 
 <br>
-<img src="" alt="All users page with the New user menu open and Create new user selected"/>
+<img src="https://i.imgur.com/D5ArCii.png" alt="All users page with the New user menu open and Create new user selected"/>
 <br>
 
 **Basics tab.** Fill in the user principal name, mail nickname, display name and password. You can auto-generate the password. It matters little, because you will require the user to change it at first sign-in.
 
 <br>
-<img src="" alt="Create new user wizard Basics tab with user principal name, display name and an auto-generated password"/>
+<img src="https://i.imgur.com/dJzT1wR.png" alt="Create new user wizard Basics tab with user principal name, display name and an auto-generated password"/>
 <br>
 
 **Properties tab.** Fill in the job details. Three fields need care:
@@ -109,7 +109,7 @@ You can also fill department groups automatically. A dynamic user group with a r
 - **Manager:** you can pick one now, or set it later if the manager's account doesn't exist yet.
 
 <br>
-<img src="" alt="Create new user wizard Properties tab showing user type, job title, employee type and manager fields"/>
+<img src="https://i.imgur.com/FK25MxE.png" alt="Create new user wizard Properties tab showing user type, job title, employee type and manager fields"/>
 <br>
 
 **Assignments tab.** Add the user to a group, an administrative unit or a role. You can add up to 20 group or role assignments here.
@@ -117,25 +117,25 @@ You can also fill department groups automatically. A dynamic user group with a r
 Group assignment:
 
 <br>
-<img src="" alt="Assignments tab with the Add group button and the SG-AllUsers group selected"/>
+<img src="https://i.imgur.com/SuaBuKd.png" alt="Assignments tab with the Add group button and the SG-AllUsers group selected"/>
 <br>
 
 Role assignment:
 
 <br>
-<img src="" alt="Assignments tab with the Add role button and a directory role being selected"/>
+<img src="https://i.imgur.com/QfTSP6W.png" alt="Assignments tab with the Add role button and a directory role being selected"/>
 <br>
 
 **Review + create.** Check the details, then select **Create**.
 
 <br>
-<img src="" alt="Review + create tab summarising the new user's settings before creation"/>
+<img src="https://i.imgur.com/SWmnang.png" alt="Review + create tab summarising the new user's settings before creation"/>
 <br>
 
 The new user now appears under **Users > All users**.
 
 <br>
-<img src="" alt="All users list showing the newly created user"/>
+<img src="https://i.imgur.com/5Sog6Q9.png" alt="All users list showing the newly created user"/>
 <br>
 
 ## 4. Fix administrator roles
