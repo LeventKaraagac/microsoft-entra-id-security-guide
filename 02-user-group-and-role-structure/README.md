@@ -149,20 +149,17 @@ If you didn't assign groups during user creation, do it here.
 **Where:** Entra ID > Groups > All groups > [group] > Members > Add members
 
 <br>
-<img src="" alt="Group page Members tab with the Add members button highlighted"/>
+<img src="https://i.imgur.com/EIb44Xk.png" alt="Group page Members tab with the Add members button highlighted"/>
 <br>
 
 The picker can add users, groups, devices and enterprise applications, because a group can contain any of these. For these groups, use the **Users** tab and select the right people.
 
 <br>
-<img src="" alt="Add members panel with the Users tab open and several users selected"/>
+<img src="https://i.imgur.com/2EKuLiT.png" alt="Add members panel with the Users tab open and several users selected"/>
 <br>
 
 After adding, the members appear on the **Members** tab.
 
-<br>
-<img src="" alt="Group Members tab listing the users that were added"/>
-<br>
 
 ## 6. Create dynamic device groups
 
@@ -175,38 +172,40 @@ Dynamic groups need the Entra ID **P1** license or higher. They place devices in
 | SG-Devices-iOS-Corporate | Company-owned iPhones |
 | SG-Devices-iOS-BYOD | Personally owned iPhones |
 
+**Disclaimer:** The table above is specific for an organization. It can look different for your organization according to your needs for deployment.
+
 **Where:** Entra ID > Groups > All groups > New group
 
 <br>
-<img src="" alt="New group button in the All groups page, used to start creating a dynamic device group"/>
+<img src="https://i.imgur.com/m0Ze5hW.png" alt="New group button in the All groups page, used to start creating a dynamic device group"/>
 <br>
 
 Choose **Security** as the type, name the group, add a description and set **Membership type** to **Dynamic Device**.
 
 <br>
-<img src="" alt="New group form with Security type and Dynamic Device membership type selected for SG-Devices-Linux"/>
+<img src="https://i.imgur.com/M79L6kz.png" alt="New group form with Security type and Dynamic Device membership type selected for SG-Devices-Linux"/>
 <br>
 
 Under **Dynamic device members**, select **Add dynamic query**. On the **Configure rules** tab, pick the property, operator and value. For an OS-based group, use `deviceOSType`, `Equals`, and the OS name.
 
 <br>
-<img src="" alt="Dynamic membership rule builder with property deviceOSType, operator Equals and value Linux"/>
+<img src="https://i.imgur.com/HPwhbHY.png" alt="Dynamic membership rule builder with property deviceOSType, operator Equals and value Linux"/>
 <br>
 
 Use the **Validate rules** tab before you save. Select **Add devices**, choose some of your devices and confirm the rule includes the ones you expect.
 
 <br>
-<img src="" alt="Validate rules tab with the Add devices option used to select test devices"/>
+<img src="https://i.imgur.com/b8JA9N6.png" alt="Validate rules tab with the Add devices option used to select test devices"/>
 <br>
 
 <br>
-<img src="" alt="Validate rules results showing the Linux test device as a member of the group"/>
+<img src="https://i.imgur.com/H8g6aNG.png" alt="Validate rules results showing the Linux test device as a member of the group"/>
 <br>
 
 Save the rule and create the group. Open it and check that the matching device appears automatically.
 
 <br>
-<img src="" alt="SG-Devices-Linux group page showing the Linux device added automatically by the dynamic rule"/>
+<img src="https://i.imgur.com/CPywNrC.png" alt="SG-Devices-Linux group page showing the Linux device added automatically by the dynamic rule"/>
 <br>
 
 ### Rules for all four groups
