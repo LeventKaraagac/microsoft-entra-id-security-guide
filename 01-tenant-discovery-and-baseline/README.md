@@ -40,7 +40,7 @@ Check who has which role. Pay most attention to **Global Administrator**. Many s
 Note which groups exist, whether each is Security or Microsoft 365, and how membership is managed. Leave any group that says "do not delete" (for example, the Viva Engage group) alone.
 
 <br>
-<img src="" alt="All groups list in Microsoft Entra ID showing the default groups with their group type and membership type"/>
+<img src="https://i.imgur.com/EEZdncr.png" alt="All groups list in Microsoft Entra ID"/>
 <br>
 
 ## 5. Devices
@@ -50,7 +50,7 @@ Note which groups exist, whether each is Security or Microsoft 365, and how memb
 Check what's registered, whether it's managed, and by what. Entra only shows you what is joined or registered. Device management and compliance belong to Intune (see the [Intune guide](https://github.com/LeventKaraagac/microsoft-intune-device-management-guide)).
 
 <br>
-<img src="" alt="All devices page in Microsoft Entra ID showing one registered device with its join type and no management or compliance status"/>
+<img src="https://i.imgur.com/7rxKD3z.png" alt="All devices page in Microsoft Entra ID"/>
 <br>
 
 ## 6. Applications
@@ -60,7 +60,7 @@ Check what's registered, whether it's managed, and by what. Entra only shows you
 List the applications that use your tenant to sign in. For each one, ask whether any Conditional Access policy covers it.
 
 <br>
-<img src="" alt="Enterprise applications list in Microsoft Entra ID showing the three applications registered in the tenant"/>
+<img src="https://i.imgur.com/LteKGoT.png" alt="Enterprise applications list in Microsoft Entra ID showing the three applications registered in the tenant CURRENTLY"/>
 <br>
 
 ## 7. Existing Conditional Access policies
@@ -70,7 +70,7 @@ List the applications that use your tenant to sign in. For each one, ask whether
 Check whether any policies exist, and if so, what they target and whether each is on, off or report-only. Don't build overlapping policies without knowing what is already enforced.
 
 <br>
-<img src="" alt="Conditional Access policies page in Microsoft Entra ID showing an empty list with no policies configured"/>
+<img src="https://i.imgur.com/SAPIHHY.png" alt="Conditional Access policies page in Microsoft Entra ID showing an empty list with no policies configured"/>
 <br>
 
 ## 8. Identity Secure Score
@@ -80,7 +80,7 @@ Check whether any policies exist, and if so, what they target and whether each i
 Record the score and the list of recommendations. This is your baseline. Come back to this page when you finish the guide and compare.
 
 <br>
-<img src="" alt="Identity Secure Score page in Microsoft Entra ID showing the current score percentage and the list of recommendations grouped by priority"/>
+<img src="https://i.imgur.com/FfOjf2w.png" alt="Identity Secure Score page in Microsoft Entra ID showing the current score percentage and the list of recommendations grouped by priority"/>
 <br>
 
 **Example:** our starting score was [67.5%] with [6] recommendations ([1] high, [2] medium, [3] low priority).
