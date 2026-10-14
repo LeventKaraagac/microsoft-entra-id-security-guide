@@ -1,5 +1,5 @@
-# Securing Identity in Microsoft Entra ID - A Pratical Guide for SMBs
-Last updated: 01/10/2026
+# Securing Identity in Microsoft Entra ID - A Practical Guide for SMBs
+Last updated: 14/10/2026
 
 Part of the **Microsoft 365 Security Foundations** series — practical, production-tested guides for securing Microsoft 365 as a small or growing business.
 
@@ -9,11 +9,11 @@ This isn't theoretical — it's based on implementing these exact controls in a 
 
 ## What's covered
 
-1. [Tenant Discovery and Baseline](./01-tenant-discovery-and-baseline.md)
+1. [Tenant Discovery and Baseline](./01-tenant-discovery-and-baseline)
 2. [User, Group, and Role Structure](./02-user-group-and-role-structure/)
 3. [Break-Glass Accounts](./03-break-glass-accounts/)
 4. [Conditional Access Policies](./04-conditional-access-policies/)
-5. [Privileged Identity Management](./05-privileged-identity-management/) *(planned — requires Entra ID P2)*
+5. [Privileged Identity Management](./05-privileged-identity-management/) *(documentation in progress)*
 
 ## Who this is for
 
@@ -21,4 +21,4 @@ Anyone responsible for Microsoft 365 security at a small or growing organization
 
 ## Status
 
-Sections 1–4 are complete and verified in a live tenant. Section 5 is planned once Entra ID P2 licensing is in place.
+Sections 1–4 are published. Section 5's documentation is in progress. 
