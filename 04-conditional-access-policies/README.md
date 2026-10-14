@@ -10,7 +10,7 @@ Set up your groups first ([02](../02-user-group-and-role-structure/)) and your b
 | Policy | Documentation |
 |---|---|
 | Block legacy authentication | [Published](block-legacy-authentication.md) |
-| Require phishing-resistant MFA for administrators | [Published](phishing-resistant-mfa-for-admins.md) |
+| Require phishing-resistant MFA for administrators | [Published](phishing-resistant-mfa-admins.md) |
 | Require MFA for all users | [Published](mfa-for-all-users.md) |
 | Secure security info registration | [Published](secure-security-info-registration.md) |
 | Sign-in frequency and browser persistence | [Published](session-controls.md) |
@@ -20,14 +20,14 @@ Set up your groups first ([02](../02-user-group-and-role-structure/)) and your b
 | Require authentication strength for device registration | In-progress |
 | Require device compliance | In-progress |
 | Require compliant device, hybrid joined, or MFA | In-progress |
-| Require MFA for Azure management | Planned |
+| Require MFA for Azure management | In-progress |
 | Block access for unknown or unsupported devices | In-progress |
 | Require terms of use to be accepted | In-progress |
 | Block access by location | In-progress |
 
 ## Start in report-only mode
 
-Every policy here starts in **Report-only** mode. The policy is evaluated on each sign-in and the result is logged, but nothing is blocked. This lets you see who would have been affected before you enforce anything.
+When you build a policy, start it in Report-only mode.”
 
 When you are comfortable with the results, switch the policy to **On**. You can also roll it out in stages by including a pilot group first.
 
