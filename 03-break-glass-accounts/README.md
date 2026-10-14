@@ -69,5 +69,16 @@ Any sign-in to a break-glass account should trigger an alert to at least two peo
 
 ## 7. Test and review
 
-- **Test the accounts** soon after setup, and then on a schedule (for example every few months). Sign in with each account, confirm it works, then confirm your alert fired.
-- **Review them** at least twice a year: who knows where the
+- **Review them** at least twice a year: who knows where the credentials are, are the passkeys still where they should be, and has anything changed that could affect them.
+- **After every use**, change the password and re-secure the credentials.
+
+## Checklist
+
+- [ ] Two cloud-only accounts created on the `.onmicrosoft.com` domain
+- [ ] Both hold a permanent Global Administrator assignment
+- [ ] Both are in SG-BreakGlass
+- [ ] SG-BreakGlass excluded from every Conditional Access policy
+- [ ] Passkey (FIDO2) or another phishing-resistant method registered
+- [ ] Credentials stored offline in separate locations
+- [ ] Sign-in alert configured and tested
+- [ ] Accounts tested, with a review date set
