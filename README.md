@@ -5,7 +5,7 @@ Part of the **Microsoft 365 Security Foundations** series — practical, product
 
 A hands-on guide to building an identity security baseline in Microsoft Entra ID,written for small and medium businesses setting up Microsoft 365 for the first time or hardening an existing tenant.
 
-This isn't theoretical — it's based on implementing these exact controls in a real, live Microsoft 365 production environment, not a lab. Where a decision involved a trade-off (licensing limits, team size, what's realistic for a small company), that's called out so you can make the right call for your own situation.
+The steps come from hands-on configuration work, not from theory. Where a decision involves a trade-off, such as cost, team size or what's realistic for a small company, the guide calls it out so you can make the right call for your own situation. Microsoft's ecosystem can be intimidating but hopefully this guide will save you some time!
 
 ## What's covered
 
