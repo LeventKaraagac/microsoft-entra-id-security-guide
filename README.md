@@ -14,7 +14,7 @@ The steps come from hands-on configuration work, not from theory. Where a decisi
 3. [Break-Glass Accounts](./03-break-glass-accounts/)
 4. [Conditional Access Policies](./04-conditional-access-policies/)
 5. [Privileged Identity Management](./05-privileged-identity-management/) *(documentation in progress)*
-6. [Authentication Methods and SSPR](./06-authentication-methods-and-sspr/)
+6. [Authentication Methods and Self-Service Password Reset](./06-authentication-methods-and-sspr/)
 
 ## Who this is for
 
