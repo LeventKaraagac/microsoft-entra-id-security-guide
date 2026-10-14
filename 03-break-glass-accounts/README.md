@@ -24,30 +24,18 @@ Set these up **before** you build the Conditional Access policies in [04](../04-
 1. On the **Basics** tab, use the `.onmicrosoft.com` domain for the user principal name. Choose a name that isn't tied to a person, and consider one that doesn't advertise its purpose to someone browsing your user list.
 2. Generate a long, random password. You'll store it offline in a later step.
 
-<br>
-<img src="" alt="Create new user wizard Basics tab with a user principal name on the onmicrosoft.com domain and an auto-generated password for an emergency-access account"/>
-<br>
-
 3. On the **Assignments** tab, add the account to the **SG-BreakGlass** group and assign the **Global Administrator** role. Make the role assignment permanent (active), not eligible.
-
-<br>
-<img src="" alt="Create new user wizard Assignments tab with the SG-BreakGlass group and the Global Administrator role added"/>
-<br>
 
 4. Select **Review + create**, then **Create**.
 
 Repeat for the second account.
-
-<br>
-<img src="" alt="All users list showing the two emergency-access accounts alongside the other users"/>
-<br>
 
 ## 2. Add both accounts to SG-BreakGlass
 
 If you didn't add them during creation, go to **Entra ID > Groups > SG-BreakGlass > Members > Add members** and add both. See [02](../02-user-group-and-role-structure/) for the group steps.
 
 <br>
-<img src="" alt="SG-BreakGlass group Members tab listing the two emergency-access accounts"/>
+<img src="https://i.imgur.com/zVv4YMX.png" alt="SG-BreakGlass group Members tab listing the two emergency-access accounts"/>
 <br>
 
 ## 3. Exclude the group from your Conditional Access policies
@@ -78,10 +66,6 @@ Any sign-in to a break-glass account should trigger an alert to at least two peo
 
 1. Find the sign-ins in **Entra ID > Monitoring & health > Sign-in logs**, filtered by user.
 2. Send the sign-in logs to a Log Analytics workspace, and create an alert rule that fires when either account signs in. If you use a SIEM such as Microsoft Sentinel, build a detection rule for the same thing.
-
-<br>
-<img src="" alt="Sign-in logs filtered to an emergency-access account, showing the sign-in events to monitor"/>
-<br>
 
 ## 7. Test and review
 
